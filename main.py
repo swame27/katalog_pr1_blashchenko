@@ -1,6 +1,6 @@
 from datetime import date
  
-# --- Простые типы данных ---
+#простые типы данных
 title = "Звёздная ночь"
 author_name = "Винсент ван Гог"
 creation_year = 1889
@@ -8,14 +8,14 @@ technique = "масло, холст"
 category = "постимпрессионизм"
 is_in_permanent_collection = True
  
-# Текущий год берём из модуля datetime
+#текущий год берём из модуля datetime
 current_year = date.today().year
  
-# --- Операции и преобразование типов ---
+#операции и преобразование типов 
 artwork_age = current_year - creation_year
 age_message = "Возраст произведения: " + str(artwork_age) + " лет"
  
-# --- Ветвления ---
+#ветвления
 def get_period_status(age):
     if age >= 100:
         return "Историческое произведение"
@@ -31,7 +31,7 @@ if is_in_permanent_collection:
 else:
     collection_note = "Не входит в постоянную коллекцию"
  
-# --- Вывод карточки произведения ---
+#вывод карточки произведения
 print("=== Карточка произведения искусства ===")
 print(f"Название: {title}")
 print(f"Автор: {author_name}")
